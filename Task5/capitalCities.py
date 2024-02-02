@@ -1,4 +1,5 @@
 #  tavidanve shemomtavaze romeli qveynebidan sheidzlebaavirchio 
+#  ხაარისხი არის მაგრამ დახვეწა შეგიძლია
 countries = {
     1: "Georgia",
     2: "UK",
