@@ -1,3 +1,4 @@
+#  tavidanve shemomtavaze romeli qveynebidan sheidzlebaavirchio 
 countries = {
     1: "Georgia",
     2: "UK",
