@@ -1,29 +1,25 @@
-def calculate(num1, num2, operation):
-    if operation == '+':
-        return num1 + num2
-    elif operation == '-':
-        return num1 - num2
-    elif operation == '*':
-        return num1 * num2
-    elif operation == '/':
-        return num1 / num2
-    else:
-        return None
-
-
-continue_calculation = True
-
-while continue_calculation:
-    num1 = float(input("Enter a number: "))
-    operation1 = input("Enter an operation: ")
-    num2 = float(input("Enter a number: "))
-    operation2 = input("Enter an operation: ")
-
-    if operation1 == "=":
+numbers = []
+operations = []
+while True:
+    number = input("Enter a number: ")
+    operation = input("Enter an operation: ")
+    numbers.append(int(number))
+    operations.append(operation)
+    if operation == "=":
         break
-    if operation2 == "=":
-        break
+result = 0
+i = 0
+result = numbers[0]
+for i in range(0, len(numbers) - 1):
+    if operations[i] == "+":
+        result += numbers[i + 1]
+    elif operations[i] == "-":
+        result -= numbers[i + 1]
+    elif operations[i] == "*":
+        result *= numbers[i + 1]
+    elif operations[i] == '/':
+        result /= numbers[i + 1]
     else:
-        result = calculate(num1, num2, operation1, operation2)
+        print("Invalid")
 
-print(result)
+print(int(result))
