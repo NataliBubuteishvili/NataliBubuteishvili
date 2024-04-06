@@ -6,11 +6,11 @@ for i in range(4):
 
 print(animal_list)
 
-index = int(input("Enter the index of the animal you want to remove (0,1,2,3): "))
+index = int(input("Enter the index of the animal you want to remove (0,1,2,3): "))  # +1 ინდექსით უნდა დაბეჭდო
 
 if 0 <= index < len(animal_list):
-    print(animal_list[index])
-    del animal_list[index]
+    print(animal_list[index]) #  -1 ინდექსად უნდა დაბეჭდო 
+    del animal_list[index]  #  -1 ინდექსზე უნდა წაშალო
     print(animal_list)
 else:
     print("Invalid Index")
